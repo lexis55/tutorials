@@ -4,7 +4,7 @@
 
 ## Install Prometheus on Ubuntu 20.04
 
-ssh -i ~/Downloads/devops.pem ubuntu@3.84.147.35
+ssh -i ~/Downloads/devops.pem ubuntu@107.23.226.82
 
 sudo useradd \
     --system \
@@ -70,7 +70,7 @@ sudo systemctl status prometheus
 journalctl -u prometheus -f
 
 
-http://3.84.147.35:9090
+http://107.23.226.82:9090
 
 
 ## Install Node Exporter on Ubuntu 20.04
@@ -122,10 +122,10 @@ sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
 sudo systemctl status node_exporter
 
-journalctl -u node_exporter -f
+journalctl -u node_exporter -f --no-pager
 
 
-http://3.84.147.35:9100
+http://107.23.226.82:9100
 
 add node_exporter to the target list
 
@@ -141,7 +141,7 @@ promtool check config /etc/prometheus/prometheus.yml
 curl -X POST http://localhost:9090/-/reload
 sudo systemctl restart prometheus
 
-http://3.84.147.35:9090
+http://107.23.226.82:9090
 
 ## Install Grafana on Ubuntu 20.04
 https://grafana.com/docs/grafana/latest/installation/debian/
@@ -158,7 +158,7 @@ sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 sudo systemctl status grafana-server
 
-http://3.84.147.35:3000
+http://107.23.226.82:3000
 
 admin/admin
 admin/devops123
@@ -180,7 +180,7 @@ sudo systemctl restart grafana-server
 create first graph manually
 
 find in Prometheus "scrape_duration_seconds"
-http://3.84.147.35:9090
+http://107.23.226.82:9090
 
 Call it - Scrape Duration
 
@@ -236,7 +236,7 @@ sudo systemctl enable pushgateway
 sudo systemctl start pushgateway
 sudo systemctl status pushgateway
 
-http://3.84.147.35:9091
+http://107.23.226.82:9091
 
 sudo vim /etc/prometheus/prometheus.yml
 
@@ -251,7 +251,7 @@ promtool check config /etc/prometheus/prometheus.yml
 curl -X POST http://localhost:9090/-/reload
 sudo systemctl restart prometheus
 
-http://3.84.147.35:9090
+http://107.23.226.82:9090
 
 echo "jenkins_job_duration_seconds 15.98" | curl --data-binary @- http://localhost:9091/metrics/job/backup
 
@@ -291,7 +291,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart prometheus
 sudo systemctl status prometheus
 
-http://3.84.147.35:9090
+http://107.23.226.82:9090
 
 update datasource
 
@@ -349,7 +349,7 @@ sudo systemctl enable alertmanager
 sudo systemctl start alertmanager
 sudo systemctl status alertmanager
 
-http://3.84.147.35:9093
+http://107.23.226.82:9093
 
 sudo vim /etc/prometheus/dead-mans-snitch-rule.yml
 
