@@ -295,6 +295,15 @@ http://107.23.226.82:9090
 
 update datasource
 
+
+
+
+
+
+
+
+
+
 ## Install Alertmanager on Ubuntu 20.04
 
 sudo useradd \
@@ -372,6 +381,12 @@ sudo systemctl restart prometheus
 sudo systemctl status prometheus
 
 https://deadmanssnitch.com/
+
+
+
+
+
+
 
 
 ## Alertmanager Slack Channel Integration
