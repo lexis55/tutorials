@@ -1,5 +1,7 @@
 # Tutorials
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/1e7c70ba-e198-400d-984d-ffd1a535424b.svg?orgId=233256683269)](https://app.soluble.cloud/repos/details/github.com/lexis55/tutorials?orgId=233256683269)  [![CIS](https://app.soluble.cloud/api/v1/public/badges/5376e50b-904c-46f3-a268-551103b6dda5.svg?orgId=233256683269)](https://app.soluble.cloud/repos/details/github.com/lexis55/tutorials?orgId=233256683269)  [![HIPAA](https://app.soluble.cloud/api/v1/public/badges/6a45f602-1526-421a-a7f0-16b1f4d82086.svg?orgId=233256683269)](https://app.soluble.cloud/repos/details/github.com/lexis55/tutorials?orgId=233256683269)  [![IaC](https://app.soluble.cloud/api/v1/public/badges/131bb5e4-328b-4b6f-9c6f-1b35e262ae5e.svg?orgId=233256683269)](https://app.soluble.cloud/repos/details/github.com/lexis55/tutorials?orgId=233256683269)  
+
 ![YouTube Art](assets/youtube-art.png?raw=true "Title")
 
 # Support
